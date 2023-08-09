@@ -65,7 +65,6 @@ set background=dark
 " Available values: 'hard', 'medium'(default), 'soft'
 let g:gruvbox_material_background = 'material'
 let g:gruvbox_material_foreground = 'mix'
-" For better performance
 let g:gruvbox_material_better_performance = 1
 colorscheme gruvbox-material
 
