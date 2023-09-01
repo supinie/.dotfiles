@@ -69,3 +69,8 @@ let g:gruvbox_material_better_performance = 1
 colorscheme gruvbox-material
 
 set listchars=tab:➤\ ,trail:◆ et listchars=tab:➤\ ,trail:◆
+
+let filetypes = ['json']
+if index(filetypes, &filetype) != -1
+    set conceallevel=0
+endif
