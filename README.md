@@ -1,16 +1,16 @@
 # Dotfiles Repository
 
-This repository contains my personal configuration files for Zsh, Oh-My-Zsh, Tmux, and Neovim. These configuration files are meant to help you set up a consistent and efficient development environment. By using these dotfiles, you can quickly replicate my preferred settings and plugins across different machines.
+This repository contains my personal configuration files for Zsh, Oh-My-Zsh, tmux, and Neovim. These configuration files are meant to help you set up a consistent and efficient development environment. By using these dotfiles, you can quickly replicate my preferred settings and plugins across different machines.
 
 ## Prerequisites
 
 Before you begin, make sure you have the following software installed (**bold** are required, *italics* are programs that have config files in this repo):
 
-- **Stow**
-- *Zsh*
-- *Oh-My-Zsh*
-- *Neovim*
-- *Tmux*
+- [**Stow**](https://www.gnu.org/software/stow/)
+- [*Zsh*](https://www.zsh.org/)
+- [*Oh-My-Zsh*](https://ohmyz.sh/)
+- [*Neovim*](https://neovim.io/)
+- [*tmux*](https://github.com/tmux/tmux/wiki)
 
 ## Installation
 
@@ -41,7 +41,7 @@ This will create symlinks from your home directory to the configuration files in
 - Zsh: Edit `.zshrc` to add or modify aliases, environment variables, and settings.
 - Oh-My-Zsh: The `ohmyzsh` directory contains a custom lib and theme.
 - Neovim: Modify `init.vim` to add or modify plugins, key mappings, and settings.
-- Tmux: Modify `tmux.conf` to add or modify plugins, key mappings, and settings.
+- tmux: Modify `tmux.conf` to add or modify plugins, key mappings, and settings.
 
 Restart your shell for changes to take effect.
 
