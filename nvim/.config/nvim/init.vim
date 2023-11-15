@@ -1,10 +1,10 @@
 set mouse=
 set guicursor=n-v-c-i:block
 
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
+" noremap <C-h> <C-w>h
+" noremap <C-j> <C-w>j
+" noremap <C-k> <C-w>k
+" noremap <C-l> <C-w>l
 
 set tabstop=4
 set softtabstop=4
@@ -41,6 +41,7 @@ Plug 'christoomey/vim-system-copy'
 Plug 'frazrepo/vim-rainbow'
 Plug 'yggdroot/indentLine'
 Plug 'tpope/vim-commentary'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 noremap <silent> <C-t> :10split <bar> :term <CR>
 tnoremap <Esc> <C-\><C-n>
