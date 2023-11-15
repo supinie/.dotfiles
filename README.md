@@ -6,7 +6,7 @@ This repository contains my personal configuration files for Zsh, Oh-My-Zsh, Tmu
 
 Before you begin, make sure you have the following software installed (**bold** are required, *italics* are programs that have config files in this repo):
 
-- **_Stow**
+- **Stow**
 - *Zsh*
 - *Oh-My-Zsh*
 - *Neovim*
