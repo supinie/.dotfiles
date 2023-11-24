@@ -4,16 +4,16 @@ This repository contains my personal configuration files for Zsh, Oh-My-Zsh, tmu
 
 ## Prerequisites
 
-Before you begin, make sure you have the following software installed (**bold** are required, *italics* are programs that have config files in this repo):
+Before you begin, make sure you have the following software installed (*Italics* are programs that have config files in this repo):
 
-- [**Stow**](https://www.gnu.org/software/stow/)
-- [**Cargo**](https://www.rust-lang.org/learn/get-started)[\*](#1)
+- [Stow](https://www.gnu.org/software/stow/)
+- [Cargo](https://www.rust-lang.org/learn/get-started)\*
 - [*Zsh*](https://www.zsh.org/)
 - [*Oh-My-Zsh*](https://ohmyz.sh/)
 - [*Neovim*](https://neovim.io/)
 - [*tmux*](https://github.com/tmux/tmux/wiki)
 
-*<a id="1">\*</a> Required for certain Zsh aliases.*
+*\* Required for certain Zsh aliases.*
 
 ## Installation
 
@@ -31,7 +31,13 @@ $ git clone https://github.com/your-username/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 ```
 
-3. Use Stow to symlink the configuration files you want. For example, if you want to set up Zsh and Neovim configurations:
+3. \* *If using Zsh config* install the required crates:
+
+```
+$ ./cargo/cargo_setup.sh
+```
+
+4. Use Stow to symlink the configuration files you want. For example, if you want to set up Zsh and Neovim configurations:
 
 ```
 $ stow zsh nvim ohmyzsh
@@ -69,4 +75,4 @@ If you are updating based on your own local changes, simply rerun the stow comma
 
 ## Disclaimer
 
-Use these dotfiles at your own risk. It's recommended to back up your existing configurations before applying these dotfiles.
+Use these dotfiles at your own risk. It's recommended to back up your existing configurations before applying these dotfiles, and as always, audit any scripts before running on your machine.
