@@ -7,6 +7,7 @@ This repository contains my personal configuration files for Zsh, Oh-My-Zsh, tmu
 Before you begin, make sure you have the following software installed (**bold** are required, *italics* are programs that have config files in this repo):
 
 - [**Stow**](https://www.gnu.org/software/stow/)
+- [**Cargo**](https://www.rust-lang.org/learn/get-started) $_{\text{Aliases used in Zsh config}}$
 - [*Zsh*](https://www.zsh.org/)
 - [*Oh-My-Zsh*](https://ohmyz.sh/)
 - [*Neovim*](https://neovim.io/)
