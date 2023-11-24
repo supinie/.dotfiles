@@ -31,7 +31,7 @@ $ git clone https://github.com/your-username/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 ```
 
-3. \* *If using Zsh config* install the required crates:
+3*. *If using Zsh config*, install the required crates:
 
 ```
 $ ./cargo/cargo_setup.sh
