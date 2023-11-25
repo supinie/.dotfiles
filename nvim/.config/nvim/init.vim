@@ -44,6 +44,7 @@ Plug 'tpope/vim-commentary'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
+Plug 'lervag/vimtex'
 call plug#end()
 noremap <silent> <C-t> :10split <bar> :term <CR>
 tnoremap <Esc> <C-\><C-n>
@@ -80,3 +81,15 @@ endif
 
 nnoremap <C-p> <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <C-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
+
+" VimTex
+" Filter out some compilation warning messages from QuickFix display
+let g:vimtex_quickfix_ignore_filters = [
+      \ 'Underfull \\hbox',
+      \ 'Overfull \\hbox',
+      \ 'LaTeX Warning: .\+ float specifier changed to',
+      \ 'LaTeX hooks Warning',
+      \ 'Package siunitx Warning: Detected the "physics" package:',
+      \ 'Package hyperref Warning: Token not allowed in a PDF string',
+      \]
+let g:vimtex_view_method = 'zathura'
