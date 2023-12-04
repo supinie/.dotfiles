@@ -13,7 +13,7 @@ Before you begin, make sure you have the following software installed (*Italics*
 - [*Neovim*](https://neovim.io/)
 - [*tmux*](https://github.com/tmux/tmux/wiki)
 
-*\* Required for certain Zsh aliases.*
+*\* Required for certain Zsh aliases, and for bacon. Bacon config can be installed using `stow cargo`*
 
 ## Installation
 
