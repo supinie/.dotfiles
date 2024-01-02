@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
-alias cdg="cd $(git rev-parse --show-toplevel)
+alias cdg="cd $(git rev-parse --show-toplevel)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
