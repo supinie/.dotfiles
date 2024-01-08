@@ -4,13 +4,13 @@
 EZA_COLORS="reset"
 
 # Directories
-EZA_COLORS+=":di=38;5;244"
+EZA_COLORS+=":di=4;38;5;208"
 
 # Executable files
-EZA_COLORS+=":ex=38;5;166"
+EZA_COLORS+=":ex=1;38;5;208"
 
 # Regular files
-EZA_COLORS+=":fi=38;5;245"
+EZA_COLORS+=":fi=38;5;245:*.md=4;38;5;220"
 
 # Symlinks
 EZA_COLORS+=":ln=38;5;136"

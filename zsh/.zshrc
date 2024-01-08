@@ -103,7 +103,14 @@ alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
 alias cdg="cd $(git rev-parse --show-toplevel)"
-alias la="eza -T --git -l --icons"
+la_func() {
+    if [ -n "$1" ]; then
+        eza -T --git -la --icons -L "$1"
+    else
+        eza -T --git -la --icons -L 1
+    fi
+}
+alias la="la_func"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
