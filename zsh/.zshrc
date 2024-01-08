@@ -103,6 +103,7 @@ alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
 alias cdg="cd $(git rev-parse --show-toplevel)"
+alias la="eza -T --git -l --icons"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -113,3 +114,5 @@ export PATH=$PATH:/home/supinie/.local/bin
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+source ~/.config/eza_theme.sh
