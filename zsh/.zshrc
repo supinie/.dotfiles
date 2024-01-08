@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias cat="bat"
 alias grep="rg"
-alias cdg="cd $(git rev-parse --show-toplevel)"
+alias cdg='git rev-parse --is-inside-work-tree &>/dev/null && cd "$(git rev-parse --show-toplevel)"'
 ls_func() {
     if [ -n "$1" ]; then
         eza -T --git -l --icons -L "$1"
