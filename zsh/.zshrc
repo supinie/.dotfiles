@@ -105,14 +105,22 @@ alias grep="rg"
 alias cdg='git rev-parse --is-inside-work-tree &>/dev/null && cd "$(git rev-parse --show-toplevel)"'
 ls_func() {
     if [ -n "$1" ]; then
-        eza -T --git -l --icons -L "$1"
+        if [ -n "$2" ]; then
+            eza -T --git -l --icons -L "$2" "$1"
+        else
+            eza -T --git -l --icons -L 1 "$1"
+        fi
     else
         eza -T --git -l --icons -L 1
     fi
 }
 la_func() {
     if [ -n "$1" ]; then
-        eza -T --git -la --icons -L "$1"
+        if [ -n "$2" ]; then
+            eza -T --git -la --icons -L "$2" "$1"
+        else
+            eza -T --git -la --icons -L 1 "$1"
+        fi
     else
         eza -T --git -la --icons -L 1
     fi
