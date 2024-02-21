@@ -81,6 +81,7 @@ endif
 
 nnoremap <C-p> <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <C-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <C-b> <cmd>lua require('telescope.builtin').buffers()<cr>
 
 " VimTex
 " Filter out some compilation warning messages from QuickFix display
