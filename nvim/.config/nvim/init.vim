@@ -45,6 +45,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
 Plug 'lervag/vimtex'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-web-devicons' " Dependency for lualine
 call plug#end()
 noremap <silent> <C-t> :10split <bar> :term <CR>
 tnoremap <Esc> <C-\><C-n>
@@ -94,3 +96,9 @@ let g:vimtex_quickfix_ignore_filters = [
       \ 'Package hyperref Warning: Token not allowed in a PDF string',
       \]
 let g:vimtex_view_method = 'zathura'
+
+
+lua << END
+require('lualine').setup()
+options = { theme = 'gruvbox-material' }
+END
