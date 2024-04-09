@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias cat="bat"
+export BAT_THEME="gruvbox-dark"
 alias grep="rg"
 alias cdg='git rev-parse --is-inside-work-tree &>/dev/null && cd "$(git rev-parse --show-toplevel)"'
 ls_func() {

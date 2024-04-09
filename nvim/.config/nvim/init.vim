@@ -18,6 +18,7 @@ set laststatus=2
 set nohlsearch
 set showcmd
 set splitbelow
+set splitright
 
 " map <Left> <Nop>
 " map <Right> <Nop>
@@ -84,6 +85,7 @@ endif
 nnoremap <C-p> <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <C-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <C-b> <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <C-l> <cmd>lua require('telescope.builtin').find_files()<cr>
 
 " VimTex
 " Filter out some compilation warning messages from QuickFix display
@@ -140,4 +142,15 @@ local config = {
     extensions = {}
 }
 require('lualine').setup(config)
+
+require('telescope').setup{
+    defaults = {
+        mappings = {
+            i = {
+                ["<C-m>"] = "select_vertical",
+                ["<C-j>"] = "select_horizontal"
+            }
+        }
+    }
+}
 END
