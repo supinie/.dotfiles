@@ -85,7 +85,7 @@ endif
 nnoremap <C-p> <cmd>lua require('telescope.builtin').git_files()<cr>
 nnoremap <C-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <C-b> <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <C-l> <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <C-i> <cmd>lua require('telescope.builtin').find_files()<cr>
 
 " VimTex
 " Filter out some compilation warning messages from QuickFix display
@@ -148,7 +148,7 @@ require('telescope').setup{
         mappings = {
             i = {
                 ["<C-m>"] = "select_vertical",
-                ["<C-j>"] = "select_horizontal"
+                ["<C-n>"] = "select_horizontal"
             }
         }
     }
