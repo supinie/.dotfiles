@@ -148,7 +148,8 @@ require('telescope').setup{
         mappings = {
             i = {
                 ["<C-m>"] = "select_vertical",
-                ["<C-n>"] = "select_horizontal"
+                ["<C-n>"] = "select_horizontal",
+                ["<CR>"] = "select_default"
             }
         }
     }

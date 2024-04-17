@@ -128,6 +128,7 @@ la_func() {
 }
 alias la="la_func"
 alias ls="ls_func"
+alias :q="exit"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
